@@ -1,0 +1,185 @@
+<html>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<head>
+    <title>Codeforces Helper</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div id="contests">
+        <center><h1 class="text" id="idHeader">Upcoming Contests</h1></center>
+        <table class="table table-striped table-dark table-hover" id="contestList">         
+        </table>
+    </div>
+    <hr>
+    <div id="questions">
+        <center><h1 class="text">Questions</h1>
+            <h4>Handle</h4>
+            <input type="text" name="" id="handle" style="max-width: 100px;" placeholder=""> 
+            <h4>Select Rating Range</h4>
+            <input type="number" name="" id="minRating" style="max-width: 100px;" placeholder="0" min="0" max = "3500" step="100"> -
+            <input type="number" name="" id="maxRating" style="max-width: 100px;" placeholder="3500" min = "0" max="3500" step="100">
+            <br>
+            <h4>Select a Tag</h4>
+            <select id="selectTag">
+                <option value="" title="" selected>Any</option>
+                <option value="2-sat" title="2-satisfiability">
+                    2-sat
+                </option>
+                <option value="binary search" title="Binary search">
+                    binary search
+                </option>
+                <option value="bitmasks" title="Bitmasks">
+                    bitmasks
+                </option>
+                <option value="brute force" title="Brute force">
+                    brute force
+                </option>
+                <option value="chinese remainder theorem" title="Сhinese remainder theorem">
+                    chinese remainder theorem
+                </option>
+                <option value="combinatorics" title="Combinatorics">
+                    combinatorics
+                </option>
+                <option value="constructive algorithms" title="Constructive algorithms">
+                    constructive algorithms
+                </option>
+                <option
+                    value="data structures"
+                    title="Heaps, binary search trees, segment trees, hash tables"
+                >
+                    data structures
+                </option>
+                <option value="dfs and similar" title="DFS and similar">
+                    dfs and similar
+                </option>
+                <option value="divide and conquer" title="Divide and Conquer">
+                    divide and conquer
+                </option>
+                <option value="dp" title="Dynamic programming">
+                    dp
+                </option>
+                <option value="dsu" title="Disjoint Set Union">
+                    dsu
+                </option>
+                <option value="expression parsing" title="Expression Parsing">
+                    expression parsing
+                </option>
+                <option value="fft" title="Fast Fourier Transform">
+                    fft
+                </option>
+                <option value="flows" title="Network Flows">
+                    flows
+                </option>
+                <option value="games" title="Games Theory">
+                    games
+                </option>
+                <option value="geometry" title="Geometry">
+                    geometry
+                </option>
+                <option
+                    value="graph matchings"
+                    title="Bipartite Matchings"
+                >
+                    graph matchings
+                </option>
+                <option value="graphs" title="Graphs">
+                    graphs
+                </option>
+                <option value="greedy" title="Greedy">
+                    greedy
+                </option>
+                <option value="hashing" title="Hashing">
+                    hashing
+                </option>
+                <option
+                    value="implementation"
+                    title="Implementation"
+                >
+                    implementation
+                </option>
+                <option value="interactive" title="Interactive">
+                    interactive
+                </option>
+                <option
+                    value="math"
+                    title="Math"
+                >
+                    math
+                </option>
+                <option
+                    value="matrices"
+                    title="Matrix Exponentiation"
+                >
+                    matrices
+                </option>
+                <option value="meet-in-the-middle" title="Meet-in-the-Middle">
+                    meet-in-the-middle
+                </option>
+                <option
+                    value="number theory"
+                    title="Number theory"
+                >
+                    number theory
+                </option>
+                <option
+                    value="probabilities"
+                    title="Probabilities, Expectations"
+                >
+                    probabilities
+                </option>
+                <option value="schedules" title="Scheduling">
+                    schedules
+                </option>
+                <option
+                    value="shortest paths"
+                    title="Shortest Path Algorithms"
+                >
+                    shortest paths
+                </option>
+                <option value="sortings" title="Sortings">
+                    sortings
+                </option>
+                <option
+                    value="string suffix structures"
+                    title="Suffix arrays, suffix trees, suffix automatas, etc"
+                >
+                    string suffix structures
+                </option>
+                <option
+                    value="strings"
+                    title="Prefix- and Z-functions, suffix structures, KMP etc"
+                >
+                    strings
+                </option>
+                <option value="ternary search" title="Ternary search">
+                    ternary search
+                </option>
+                <option value="trees" title="Trees">
+                    trees
+                </option>
+                <option value="two pointers" title="Two pointers">
+                    two pointers
+                </option>
+            </select>
+        <button class="btn btn-success" id="searchButton" >Search</button>
+        <div id="questionList">
+            <table class="table table-striped table-dark table-hover" id="questionsListTable">
+            </table>
+        </div>
+        </center>
+    </div>
+    <hr>
+    <div id="virtualcontests">
+        <center><h1 class="text" id="idHeader">Virtual Contests</h1>
+        <h4>Handles</h4>
+        <input type="text" name="" id="handles" style="max-width: 400px;" placeholder="Handle1,Handle2,Handle3....">
+        <button class="btn btn-success" id="virtualButton" >Search</button>
+        <div id = "virtualcontestsList">
+            <table class="table table-striped table-dark table-hover" id="virtualcontestListTable">         
+            </table>
+        </div> 
+        </center>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
