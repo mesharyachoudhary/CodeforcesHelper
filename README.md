@@ -21,11 +21,11 @@ The extension fetches the list of the upcoming contests and displays it in a tab
 ### Topicwise and Ratingwise Questions
 ![2](media/questions.jpeg)
 <br>
-For the given rating range, topic and handle, the extension finds 5 unsolved problems for the given handle. If no handle name is provided then the list of questions may contain already solved problems.
+Enter the handle name, the rating range and select the topic from the drop down. For the given rating range, topic and handle, the extension finds 5 unsolved problems for the given handle. If no handle name is provided then the list of questions may contain already solved problems.
 ### Virtual Contests
 ![3](media/virtualcontests.jpeg)
 <br>
-For a given group of users, the extension finds the contests with no solved questions by any of the user so that it can be used for group virtual contests.
+Enter the handles of the users for which virtual contests have to be suggested in comma seperated format without any spaces in between. For a given group of users, the extension finds the contests with no solved questions by any of the user so that it can be used for group virtual contests.
 
 
 
