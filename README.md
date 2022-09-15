@@ -15,13 +15,14 @@ In order to use the extension follow the steps given below:
 
 ### Upcoming Contests
 ![1](media/upcomingcontests.jpeg)
-
+The extension fetches the list of the upcoming contests and displays it in a tabular format.
 
 ### Topicwise and Ratingwise Questions
 ![2](media/questions.jpeg)
-
+For the given rating range, topic and handle, the extension finds 5 unsolved problems for the given handle. If no handle name is provided then the list of questions may contain already solved problems.
 ### Virtual Contests
 ![3](media/virtualcontests.jpeg)
+For a given group of users, the extension finds the contests with no solved questions by any of the user so that it can be used for group virtual contests.
 
 
 
